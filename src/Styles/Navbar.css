@@ -1,5 +1,53 @@
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
     height: 60px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding-top: 10px;
+
+    .nav-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-decoration: none;
+        color: black;
+
+        .company-name {
+            width: 67.675px;
+            height: 23.584px;
+            flex-shrink: 0;
+            margin-left: 11px;
+            color: #000;
+            font-family: Archivo;
+            font-size: 20.508px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    .search-bar {
+        height: 32px;
+        width: 520px;
+        border-radius: 8px;
+        background: #EEF0FA;
+        border: none;
+
+    }
+
+    .nav-links {
+        list-style-type: none;
+        display: flex;
+        gap: 84px;
+
+        /* flex-direction: row; */
+        .nav-link {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+
 }
