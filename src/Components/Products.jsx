@@ -167,7 +167,7 @@ const Products = () => {
               </div>
               <div className="bottom-card" id="b-card3">
               <div className="bottom-logo" id='coolant'></div>
-                <div className="bottom-reading">50°c</div>
+                <div className="bottom-reading">50°C</div>
                 <div className="bottom-title">Coolant Temp</div>
               </div>
               <div className="bottom-card" id="b-card4">
