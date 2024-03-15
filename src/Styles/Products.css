@@ -486,15 +486,18 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
-                div{
+
+                div {
                     margin-left: 10px;
                 }
-                .bottom-reading{
+
+                .bottom-reading {
                     width: 78px;
                     height: 30px;
                     /* background: red; */
                 }
-                .bottom-title{
+
+                .bottom-title {
                     width: 110px;
                     height: 30px;
                     /* background: blue; */
@@ -507,24 +510,28 @@
                     background: url("../assets/frequency-icon.png");
                     background-size: contain;
                 }
-                #engine-rpm{
-                    background:url("../assets/dynamo-img.png");
+
+                #engine-rpm {
+                    background: url("../assets/dynamo-img.png");
                     background-size: cover;
 
                 }
-                #coolant{
+
+                #coolant {
                     background: url("../assets/coolant-icon.png");
                     background-size: cover;
 
                 }
-                #pressure-gauge{
+
+                #pressure-gauge {
                     background: url("../assets/pressure-gauge\ 1.png");
                     background-size: cover;
                     width: 41px;
                     height: 37px;
 
                 }
-                #oil-pressure{
+
+                #oil-pressure {
                     font-size: 10px;
                 }
 
@@ -557,12 +564,17 @@
 }
 
 .product-container #row3 {
+    position: relative;
     width: 1481px;
     height: 302px;
     flex-shrink: 0;
     border-radius: 6px;
     background: var(--White, #FFF);
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.10);
+    img{
+        position: absolute;
+        width: 100%;
+    }
 }
 
 .product-container .product-right-section {
@@ -577,11 +589,12 @@
     padding-top: 10px;
 
     .bottom-right {
+        margin-top: -30px;
         display: flex;
         width: 315px;
-        height: 260px;
+        height: 300px;
         padding: 20px;
-        /* padding-top: 20px; */
+        padding-top: 0px 20px;
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
@@ -669,6 +682,107 @@
         background: var(--Snow, #FFF);
         box-shadow: 0px 2.767px 2.214px 0px rgba(108, 73, 172, 0.02), 0px 6.65px 5.32px 0px rgba(108, 73, 172, 0.03), 0px 12.522px 10.017px 0px rgba(108, 73, 172, 0.04);
 
+        .notifications-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .notifications-heading {
+                width: 305px;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                padding: 24px 12px;
+                align-items: center;
+                /* background: blue; */
+
+                .notification {
+                    color: var(--Gray-900, #101828);
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 30px;
+                    /* 150% */
+                }
+
+                .close-btn {
+                    /* background-color: red; */
+                    height: 40px;
+                    width: 40px;
+                    padding: 5px;
+
+                    svg {
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+            }
+
+            .notification-card {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                justify-content: flex-start;
+                align-items: center;
+                width: 85%;
+                /* padding-top: 20px; */
+                /* background: red; */
+
+                .left-bell {
+                    background: url("../assets/bell-img.png");
+                    display: flex;
+                    width: 48px;
+                    height: 48px;
+                    padding: 36px 0px 0px 50px;
+                    justify-content: flex-end;
+                    align-items: center;
+                    z-index: 99;
+
+                }
+
+                .right-content {
+                    padding-top: 20px;
+                    .name-time {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        /* background: pink; */
+                        gap: 10px;
+                        /* justify-content: space-between; */
+                        margin-bottom: 10px;
+
+                        .name {
+                            color: var(--Gray-700, #344054);
+                            font-family: Poppins;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 20px;
+                            /* 142.857% */
+                        }
+
+                        .time {
+                            color: var(--Gray-600, #475467);
+                            font-family: Poppins;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 18px;
+                            /* 150% */
+                        }
+                    }
+                    .details{
+                        height: 80px;
+                        width: 250px;
+                        display: flex;
+                        justify-content: center;
+                        padding: 0;
+                    }
+                }
+            }
+        }
 
     }
 

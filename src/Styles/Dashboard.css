@@ -1,0 +1,667 @@
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    background: #FFF;
+}
+
+.dashboard-left {
+    /* border: 1px solid grey; */
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 5px; */
+    /* justify-content: space-around; */
+
+    .left-top-row {
+        /* width: 1188px; */
+        height: 667px;
+        flex-shrink: 0;
+        /* border: 1px solid #DCE3EB; */
+        background: #FFF;
+        /* background: blue; */
+
+        .navigation-arrow-dashboard {
+            display: flex;
+            flex-direction: row;
+            /* margin-left: 80px; */
+            margin-top: 20px;
+            height: 30px;
+
+            .dashboard-generator-route {
+                height: 26px;
+                width: 198px;
+                /* background: red; */
+                display: flex;
+
+                .dashboard-route {
+                    color: rgba(65, 82, 128, 0.38);
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .generator-route {
+                    color: #415280;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+        }
+
+        .generator-battery-temp-switch {
+            width: 1088px;
+            height: 57px;
+            /* border: 1px solid red; */
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .switch-left {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+
+                .generator-title {
+                    color: #383874;
+                    font-family: Poppins;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                .generator-subtitle {
+                    width: 85px;
+                    height: 24px;
+                    display: flex;
+                    align-items: baseline;
+                    color: #383874;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            .switch-right {
+                width: 290px;
+                height: 57px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .on-off-switch {
+                    width: 114px;
+                    height: 57.33px;
+                    flex-shrink: 0;
+                    border-radius: 20px;
+                    background: #1BD82E;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .switch-status {
+                        width: 31px;
+                        height: 26px;
+                        color: #FFF;
+                        font-family: Poppins;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 30px;
+                        margin-left: 15px;
+                        /* 150% */
+                    }
+                    .circle-switch{
+                        height: 37px;
+                        width: 37px;
+                        border-radius: 50%;
+                        background: #FFF;
+                        margin-right: 15px;
+                    }
+                }
+
+                .temperature-icon-title {
+                    width: 70px;
+                    height: 29px;
+                    height: 29px;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    .temp-icon {
+                        background: url("../assets/thermometer.png");
+                        height: 29px;
+                        width: 29px;
+
+                    }
+
+                    .temp-stats {
+                        color: var(--dark-grey, #494949);
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+
+                .battery-icon-title {
+                    width: 70px;
+                    height: 29px;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    .battery-icon {
+                        width: 19px;
+                        height: 25px;
+                        background: url("../assets/battery-icon.png");
+
+                    }
+
+                    .battery-stats {
+                        color: var(--dark-grey, #494949);
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+
+            }
+        }
+
+        .center-generator-img {
+            width: 709px;
+            height: 404px;
+            /* border: 1px solid red; */
+            margin-left: 160px;
+            margin-bottom: 10px;
+            flex-shrink: 0;
+            background: url("../assets/genrator_detail.png");
+        }
+    }
+
+    .dashboard-card-section {
+        width: 918px;
+        height: 80px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+        margin-top: 30px;
+
+        .dashboard-card {
+            width: 127px;
+            height: 122px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            border: 1px solid #CAC7C7;
+            background: #FFF;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+
+
+            .icon {
+                height: 27px;
+                width: 27px;
+                border-radius: 50%;
+                background: rgba(71, 255, 89, 0.45);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 10px;
+                margin-top: 10px;
+
+            }
+
+            .reading {
+                height: 26px;
+                width: 70px;
+                color: #383874;
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-left: 10px;
+
+            }
+
+            .about-reading {
+                color: var(--grey, #9E9E9E);
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px;
+                margin-left: 10px;
+
+                /* 114.286% */
+            }
+
+            #current-reading {
+                width: 101px;
+            }
+        }
+
+        #card3 {
+            width: 198px;
+            display: flex;
+            flex-direction: column;
+
+            #card3-icon {
+                margin-left: 10px;
+            }
+
+            .readings-KVA-KW {
+                display: flex;
+                flex-direction: row;
+                gap: 80px;
+                justify-content: flex-start;
+                width: 173px;
+                color: #383874;
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-left: 10px;
+            }
+
+            .power-KVA-KW {
+                width: 173px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                color: var(--grey, #9E9E9E);
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-left: 10px;
+            }
+
+        }
+    }
+
+    .left-middle-row {
+        border-top: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        width: 1188px;
+        height: auto;
+        flex-shrink: 0;
+        border-top: 1px solid #DCE3EB;
+        border-bottom: 1px solid #DCE3EB;
+        background: #FFF;
+        /* background: blue; */
+        padding: 0;
+
+        .power-consumption-year-heading {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 20px;
+            align-items: center;
+
+            .power-consumption {
+                color: #101828;
+                font-family: Poppins;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            .select-year-btn {
+                width: 119px;
+                height: 42px;
+                border-radius: 4px;
+                border: 1px solid rgba(0, 0, 0, 0.20);
+                background: #FFF;
+                color: #000;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                display: flex;
+                align-items: center;
+                /* justify-content: space-b; */
+                gap: 10px;
+
+                .year {
+                    width: 78px;
+                    padding-left: 13px;
+                }
+            }
+        }
+
+        .line-curve {
+            width: 100%;
+            /* border: 1px solid red; */
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            img {
+                width: 95%;
+            }
+        }
+    }
+
+    .left-bottom-row {
+        width: 1188px;
+        height: 236px;
+        flex-shrink: 0;
+        border: 1px solid #DCE3EB;
+        /* background: #FFF; */
+        /* background: red; */
+        /* margin-bottom: 50px; */
+        margin-top: -50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 26px;
+
+        /* padding-left: 30px; */
+        /* padding-bottom: 30px; */
+        .contact-cards {
+            width: 571px;
+            height: 83px;
+            /* border: 1px solid white; */
+            display: flex;
+            gap: 11px;
+            margin-left: 50px;
+
+            .contact-card {
+                width: 276px;
+                height: 83px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                opacity: 1;
+                /* z-index: -99; */
+                background: #EFEFEF;
+                padding-left: 20px;
+                padding-top: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .title {
+                    width: 63px;
+                    height: 15px;
+                    color: #757575;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                #mobile-title {
+                    width: 138px;
+                    height: 15px;
+                }
+
+                .value {
+                    width: 212px;
+                    height: 26px;
+                    color: #383874;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+
+                }
+            }
+        }
+
+
+
+        .contact-information {
+            width: 253px;
+            color: #101828;
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-left: 50px;
+
+        }
+    }
+}
+
+.dashboard-right {
+    /* border: 1px solid black; */
+    margin-left: 10px;
+    height: 100%;
+
+    .device-info-tab {
+        height: 58px;
+        background: #03552E;
+        margin-top: 61px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 30px;
+
+        .device-info-heading {
+            width: 490px;
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px;
+            /* 150% */
+        }
+    }
+
+    .specifications-detailed-info-section {
+        .specification-section {
+            padding-left: 30px;
+            margin-top: 20px;
+
+            .specification-heading {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: 5px;
+                color: #383874;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                .green-block {
+                    width: 6px;
+                    height: 22px;
+                    flex-shrink: 0;
+                    background: #099250;
+                }
+            }
+        }
+
+        .detail-cards {
+            padding-left: 20px;
+            margin-top: 10px;
+            height: auto;
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            .detail-card {
+                width: 112px;
+                height: 68px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                opacity: 0.8;
+                background: #D9D9D9;
+                padding: 10px;
+                width: auto;
+                height: auto;
+
+
+                .title {
+                    color: #383874;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    opacity: 1;
+                }
+
+                .value {
+                    color: #383874;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+
+            }
+
+            .detail-card:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .alerts-info-tab {
+        height: 58px;
+        background: #03552E;
+        margin-top: 61px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 30px;
+
+        .alerts-info-heading {
+            width: 490px;
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px;
+            /* 150% */
+        }
+
+
+    }
+
+    .alerts-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+
+        .view {
+            /* position: absolute; */
+            right: 130px;
+        }
+
+        .alert-card {
+            border-left: 5px solid rgba(71, 84, 103, 1);
+            width: 90%;
+            height: 78px;
+            display: flex;
+            padding: 16px;
+            flex-direction: row;
+            align-items: flex-end;
+            gap: 16px;
+            flex: 1 0 0;
+            border: 1px solid rgba(71, 84, 103, 1);
+            /* background: red; */
+            /* color: red; */
+            justify-content: space-between;
+            align-items: center;
+
+            .left-details {
+                display: flex;
+                flex-direction: column;
+
+                .details-row1 {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 15px;
+                    align-items: center;
+
+                    .start-alert {
+                        color: var(--Dark-Gray, #181818);
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px;
+                        /* 171.429% */
+
+                    }
+
+                    .time {
+                        color: var(--Gray-600, #475467);
+                        font-family: Poppins;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 18px;
+                        /* 150% */
+                    }
+                }
+
+                .details-row2 {
+                    display: flex;
+                    flex-direction: row;
+
+                    .alert-details {
+                        color: var(--Dark-Gray, #181818);
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px;
+                        margin-left: 35px;
+                        /* 142.857% */
+                    }
+                }
+            }
+
+            .right-close {
+                height: 12px;
+                width: 12px;
+                /* padding: 10px; */
+                background: url("../assets/Icon-multiply.svg");
+                background-size: cover;
+
+
+            }
+        }
+
+    }
+
+
+}

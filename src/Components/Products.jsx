@@ -1,13 +1,15 @@
 import React from 'react'
 import "../Styles/Products.css"
+import { Link } from 'react-router-dom'
 import leaf from "../assets/leaf-svg.svg"
 import SwitchButton from './SwitchButton'
 import voltageImg from "../assets/voltage-img.png"
-import currentImg  from "../assets/current-img.png"
+import currentImg from "../assets/current-img.png"
 import powerImg from "../assets/power-img.png"
 import kvaImg from "../assets/kVA-img.png"
 import frequencyImg from "../assets/frequency-img.png"
 import companyTitle from "../assets/Optiprime.png"
+import lineGraph from "../assets/graph-line.png"
 const Products = () => {
   return (
     <div className='product-container'>
@@ -126,11 +128,11 @@ const Products = () => {
               </div>
             </div>
             <div className="center-img-section">
-              <div className="center-left-img"></div>
+              <Link to="/dashboard" className="center-left-img"></Link>
               <div className="center-logo">
                 <img src={companyTitle} alt="" />
               </div>
-              <div className="center-right-img"></div>
+              <Link to="dashboard" className="center-right-img"></Link>
             </div>
             <div className="right-table">
               <div className="table-reading-titles">
@@ -161,49 +163,110 @@ const Products = () => {
                 <div className="bottom-title">Frequency</div>
               </div>
               <div className="bottom-card" id="b-card2">
-              <div className="bottom-logo" id='engine-rpm'></div>
+                <div className="bottom-logo" id='engine-rpm'></div>
                 <div className="bottom-reading">50 </div>
                 <div className="bottom-title">Engine RPM</div>
               </div>
               <div className="bottom-card" id="b-card3">
-              <div className="bottom-logo" id='coolant'></div>
+                <div className="bottom-logo" id='coolant'></div>
                 <div className="bottom-reading">50°C</div>
                 <div className="bottom-title">Coolant Temp</div>
               </div>
               <div className="bottom-card" id="b-card4">
-              <div className="bottom-logo" id='pressure-gauge'></div>
+                <div className="bottom-logo" id='pressure-gauge'></div>
                 <div className="bottom-reading">50 Psi</div>
                 <div className="bottom-title" id='oil-pressure'>Lube Oil Pressure</div>
               </div>
             </div>
             <div className="bottom-cards-right">
               <div className="bottom-card" id="b-card1">
-              <div className="bottom-logo" id='frequency'></div>
+                <div className="bottom-logo" id='frequency'></div>
                 <div className="bottom-reading">50 Hz</div>
                 <div className="bottom-title">Frequency</div>
               </div>
               <div className="bottom-card" id="b-card2">
-              <div className="bottom-logo" id='engine-rpm'></div>
+                <div className="bottom-logo" id='engine-rpm'></div>
                 <div className="bottom-reading">50</div>
                 <div className="bottom-title">Engine RPM</div>
               </div>
               <div className="bottom-card" id="b-card3">
-              <div className="bottom-logo" id='coolant'></div>
+                <div className="bottom-logo" id='coolant'></div>
                 <div className="bottom-reading">50°c</div>
                 <div className="bottom-title">Coolant Temp</div>
               </div>
               <div className="bottom-card" id="b-card4">
-              <div className="bottom-logo" id='pressure-gauge'></div>
+                <div className="bottom-logo" id='pressure-gauge'></div>
                 <div className="bottom-reading">50 Psi</div>
                 <div className="bottom-title" id='oil-pressure'>Lube Oil Pressure</div>
               </div>
             </div>
           </div>
         </div>
-        <div className="product-left-section-row" id="row3">1</div>
+        <div className="product-left-section-row" id="row3">
+          <img src={lineGraph} alt="" />
+        </div>
       </div>
       <div className="product-right-section">
-        <div className="top-right">top</div>
+        <div className="top-right">
+          <div className="notifications-list">
+            <div className="notifications-heading">
+              <div className="notification">Notifications</div>
+              <div className="close-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15 5L5 15M5 5L15 15" stroke="#667085" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div className="notification-card">
+              <div className="left-bell"></div>
+              <div className="right-content">
+                <div className="name-time">
+                  <div className="name">John Dee</div>
+                  <div className="time">Just now</div>
+                </div>
+                <div className="details">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, voluptatum deleniti iste numquam r
+                </div>
+              </div>
+            </div>
+            <div className="notification-card">
+              <div className="left-bell"></div>
+              <div className="right-content">
+                <div className="name-time">
+                  <div className="name">John Dee</div>
+                  <div className="time">Just now</div>
+                </div>
+                <div className="details">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, voluptatum deleniti iste numquam r
+                </div>
+              </div>
+            </div>
+            <div className="notification-card">
+              <div className="left-bell"></div>
+              <div className="right-content">
+                <div className="name-time">
+                  <div className="name">John Dee</div>
+                  <div className="time">Just now</div>
+                </div>
+                <div className="details">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, voluptatum deleniti iste numquam r
+                </div>
+              </div>
+            </div>
+            <div className="notification-card">
+              <div className="left-bell"></div>
+              <div className="right-content">
+                <div className="name-time">
+                  <div className="name">John Dee</div>
+                  <div className="time">Just now</div>
+                </div>
+                <div className="details">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, voluptatum deleniti iste numquam r
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="bottom-right">
           <div className="power-controls-heading">Power Controls</div>
           <div className="gensets-icons-button">
